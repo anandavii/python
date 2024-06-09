@@ -1,4 +1,4 @@
-# Count Digits Problem README
+# Count Digits Problem
 
 [GFG Link for the Problem](https://www.geeksforgeeks.org/problems/count-digits5716/1)
 
