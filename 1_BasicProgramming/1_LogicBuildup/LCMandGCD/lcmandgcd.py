@@ -7,4 +7,4 @@ class Solution:
             B = gcd
         gcd = A
         lcm = (orgA*orgB)//gcd
-        return lcm,A
+        return lcm,gcd
