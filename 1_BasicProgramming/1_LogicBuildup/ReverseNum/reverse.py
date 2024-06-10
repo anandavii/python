@@ -4,17 +4,17 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        max_int = 2 ** 31 - 1
-        min_int = -2 ** 31
+        max = 2 ** 31 - 1
+        min = -2 ** 31
         negative = x < 0
-        rev = 0
         x = abs(x)
+        rev = 0
         while x != 0:
-            if (rev > max_int/10 or 
-                rev < min_int/10):
-                return 0
-            a = x % 10 if x > 0 else x % -10
-            rev = rev *10 + a
+            num = x % 10
+            rev = rev * 10 + num
             x = x//10
-        rev = -rev if negative else rev
+        if rev > max or rev < min:
+            return 0 
+        if negative:
+            rev = -rev
         return rev
